@@ -351,7 +351,7 @@ app.controller("firstcontroller",function($scope){
 			
 });
 app.controller("secondcontroller",function($scope,$http){
-		$http.get("https://github.com/Mrsky12138/-/blob/master/builder/new_file.json").success(function(data){
+		$http.get("new_file.json").success(function(data){
 			$scope.list=data[0].result;
 			$scope.list2=data[1].result;
 		}).error(function(){
